@@ -22,11 +22,11 @@ export default function Home() {
               src="varun.jpeg"
               alt=""
             /> */}
-          <div className="relative text-2xl md:text-5xl text-center font-bold">
+          <div className="relative text-xl md:text-5xl text-center font-bold">
             <span className="bg-clip-text text-transparent bg-gradient-to-l from-neutral-200 to-neutral-500">
               Hello, I&apos;m Varun Bardwaj
             </span>{" "}
-            <span className="text-4xl">👋</span>
+            <span className="text-xl md:text-4xl">👋</span>
           </div>
           <div className="text-neutral-500 max-w-lg mx-auto text-center relative z-10 text-sm md:text-lg mt-5">
             Front End developer from India with industry experience building web
@@ -184,8 +184,8 @@ export default function Home() {
                 All Projects
               </a>
             </div>
-            <div className="w-full text-zinc-100 flex flex-col items-center pt-14 text-center pb-5 text-sm px-10 sm:px-10 font-medium">
-              <div className="flex justify-between w-full">
+            <div className="w-full text-zinc-100 flex flex-col items-center pt-14 text-center pb-5 text-xs md:text-sm px-10 sm:px-10 font-medium">
+              <div className="flex justify-between w-full flex-wrap gap-5">
                 <div className="flex justify-center items-center">
                   Built with{" "}
                   <a
