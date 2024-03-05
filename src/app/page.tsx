@@ -177,7 +177,7 @@ export default function Home() {
             />
             <div className="w-full flex justify-end px-10">
               <a
-                className="text-neutral-200 underline underline-offset-4 font-bold cursor-pointer text-right mb-10"
+                className="text-neutral-200 underline underline-offset-8 font-bold cursor-pointer text-right mb-10"
                 href="https://github.com/varunpbardwaj#recent-works"
                 target="blank"
               >
