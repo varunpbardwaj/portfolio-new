@@ -193,7 +193,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full max-w-5xl mx-auto text-zinc-500 flex flex-col items-center pt-14 text-center pb-5 text-[0.6rem] md:text-sm px-10 sm:px-10 font-medium">
+      <div className="w-full max-w-5xl mx-auto text-zinc-500 flex flex-col items-center pt-14 text-center pb-5 text-[0.5rem] md:text-sm px-10 sm:px-10 font-medium">
         <div className="flex justify-between w-full flex-wrap gap-5">
           <div className="flex justify-center items-center">
             Built with{" "}
