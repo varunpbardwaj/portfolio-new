@@ -193,19 +193,19 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full max-w-5xl mx-auto text-zinc-500 flex flex-col items-center pt-14 text-center pb-5 text-[0.5rem] md:text-sm px-10 sm:px-10 font-medium">
+      <div className="w-full max-w-5xl mx-auto text-neutral-500 flex flex-col items-center pt-14 text-center pb-5 text-[0.5rem] md:text-sm px-10 sm:px-10 font-medium">
         <div className="flex justify-between w-full flex-wrap gap-5">
           <div className="flex justify-center items-center">
             Built with{" "}
             <a
-              className="mx-1 cursor-pointer border-b border-b-zinc-500 font-bold"
+              className="mx-1 cursor-pointer border-b border-b-neutral-500 font-bold"
               href="https://nextjs.org/"
             >
               Next.js
             </a>{" "}
             +{" "}
             <a
-              className="ml-1 cursor-pointer border-b border-b-zinc-500 font-bold"
+              className="ml-1 cursor-pointer border-b border-b-neutral-500 font-bold"
               href="https://www.framer.com/motion/"
             >
               Framer Motion
@@ -213,7 +213,7 @@ export default function Home() {
           </div>
           <div className="flex justify-center items-center">
             <a
-              className="mr-2 border-b border-b-zinc-500"
+              className="mr-2 border-b border-b-neutral-500"
               href="mailto:varunbardwajp@gmail.com"
               target="_blank"
             >
@@ -221,7 +221,7 @@ export default function Home() {
             </a>
             {" - "}
             <a
-              className="ml-2 mr-2 cursor-pointer border-b border-b-zinc-500"
+              className="ml-2 mr-2 cursor-pointer border-b border-b-neutral-500"
               href="https://www.linkedin.com/in/varun-bardwaj-2984891b3"
               target="blank"
             >
@@ -229,7 +229,7 @@ export default function Home() {
             </a>
             {" - "}
             <a
-              className="ml-2 cursor-pointer border-b border-b-zinc-500"
+              className="ml-2 cursor-pointer border-b border-b-neutral-500"
               href="https://github.com/varunpbardwaj"
               target="blank"
             >
