@@ -1,5 +1,4 @@
 import { MovingCards } from "@/components/ui/MovingCards";
-import { TracingBeam } from "@/components/ui/TracingBeam";
 import { FaReact } from "react-icons/fa";
 import { BiLogoTypescript } from "react-icons/bi";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -10,18 +9,25 @@ import { BiLogoHtml5 } from "react-icons/bi";
 import { BiLogoCss3 } from "react-icons/bi";
 import { TbBrandNextjs } from "react-icons/tb";
 import { HoverEffect } from "@/components/ui/CardHover";
+import Image from "next/image";
+import { BackgroundGradient } from "@/components/ui/BackgroundGradient";
 
 export default function Home() {
   return (
-    <TracingBeam>
-      <div className="min-h-[25rem] md:min-h-[35rem] w-full bg-black relative flex flex-col items-center justify-center antialiased bg-dot-white/[0.2]">
+    <>
+      <div className="min-h-[25rem] md:min-h-[30rem] w-full bg-black relative flex flex-col items-center justify-center antialiased bg-dot-white/[0.2]">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         <div className="w-full flex flex-col items-center justify-center px-10 py-0 md:py-20 pt-0 md:pt-32 lg:px-40 lg:pt-40 lg:pb-20">
-          {/* <img
-              className="w-[20%] h-[20%] sm:w-[10%] sm:h-[10%] contrast-125 rounded-full"
-              src="varun.jpeg"
-              alt=""
-            /> */}
+          <BackgroundGradient containerClassName="mb-8">
+            <Image
+              width="0"
+              height="0"
+              className="w-full h-full contrast-125 brightness-75 rounded-full"
+              src="/varun.jpeg"
+              alt="varun"
+              unoptimized
+            />
+          </BackgroundGradient>
           <div className="relative text-xl md:text-5xl text-center font-bold">
             <span className="bg-clip-text text-transparent bg-gradient-to-l from-neutral-200 to-neutral-500">
               Hello, I&apos;m Varun Bardwaj
@@ -175,57 +181,64 @@ export default function Home() {
                 },
               ]}
             />
-            <div className="w-full flex justify-end px-10">
+            <div className="w-full flex justify-center px-10">
               <a
-                className="text-neutral-200 underline underline-offset-8 font-bold cursor-pointer text-right mb-10"
+                className="text-white underline underline-offset-8 font-bold cursor-pointer text-right mb-10"
                 href="https://github.com/varunpbardwaj#recent-works"
                 target="blank"
               >
                 All Projects
               </a>
             </div>
-            <div className="w-full text-zinc-100 flex flex-col items-center pt-14 text-center pb-5 text-xs md:text-sm px-10 sm:px-10 font-medium">
-              <div className="flex justify-between w-full flex-wrap gap-5">
-                <div className="flex justify-center items-center">
-                  Built with{" "}
-                  <a
-                    className="ml-1 cursor-pointer border-b font-bold"
-                    href="https://nextjs.org/"
-                  >
-                    Next.js
-                  </a>
-                </div>
-                <div className="flex justify-center items-center">
-                  <a
-                    className="mr-2 border-b"
-                    href="mailto:varunbardwajp@gmail.com"
-                    target="_blank"
-                  >
-                    Gmail
-                  </a>
-                  {" - "}
-                  <a
-                    className="ml-2 mr-2 cursor-pointer border-b"
-                    href="https://www.linkedin.com/in/varun-bardwaj-2984891b3"
-                    target="blank"
-                  >
-                    LinkedIN
-                  </a>
-                  {" - "}
-                  <a
-                    className="ml-2 cursor-pointer border-b"
-                    href="https://github.com/varunpbardwaj"
-                    target="blank"
-                  >
-                    {" "}
-                    Github
-                  </a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
-    </TracingBeam>
+      <div className="w-full max-w-5xl mx-auto text-zinc-500 flex flex-col items-center pt-14 text-center pb-5 text-[0.6rem] md:text-sm px-10 sm:px-10 font-medium">
+        <div className="flex justify-between w-full flex-wrap gap-5">
+          <div className="flex justify-center items-center">
+            Built with{" "}
+            <a
+              className="mx-1 cursor-pointer border-b border-b-zinc-500 font-bold"
+              href="https://nextjs.org/"
+            >
+              Next.js
+            </a>{" "}
+            +{" "}
+            <a
+              className="ml-1 cursor-pointer border-b border-b-zinc-500 font-bold"
+              href="https://www.framer.com/motion/"
+            >
+              Framer Motion
+            </a>
+          </div>
+          <div className="flex justify-center items-center">
+            <a
+              className="mr-2 border-b border-b-zinc-500"
+              href="mailto:varunbardwajp@gmail.com"
+              target="_blank"
+            >
+              Gmail
+            </a>
+            {" - "}
+            <a
+              className="ml-2 mr-2 cursor-pointer border-b border-b-zinc-500"
+              href="https://www.linkedin.com/in/varun-bardwaj-2984891b3"
+              target="blank"
+            >
+              LinkedIN
+            </a>
+            {" - "}
+            <a
+              className="ml-2 cursor-pointer border-b border-b-zinc-500"
+              href="https://github.com/varunpbardwaj"
+              target="blank"
+            >
+              {" "}
+              Github
+            </a>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
