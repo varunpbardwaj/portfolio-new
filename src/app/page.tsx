@@ -10,7 +10,7 @@ import { BiLogoCss3 } from "react-icons/bi";
 import { TbBrandNextjs } from "react-icons/tb";
 import { HoverEffect } from "@/components/ui/CardHover";
 import Image from "next/image";
-import { BackgroundGradient } from "@/components/ui/BackgroundGradient";
+// import { BackgroundGradient } from "@/components/ui/BackgroundGradient";
 
 export default function Home() {
   return (
@@ -18,16 +18,16 @@ export default function Home() {
       <div className="min-h-[25rem] md:min-h-[30rem] w-full bg-black relative flex flex-col items-center justify-center antialiased bg-dot-white/[0.2]">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         <div className="w-full flex flex-col items-center justify-center px-10 py-0 md:py-20 pt-0 md:pt-32 lg:px-40 lg:pt-40 lg:pb-20">
-          <BackgroundGradient containerClassName="mb-8">
-            <Image
-              width="0"
-              height="0"
-              className="w-full h-full contrast-125 brightness-75 rounded-full"
-              src="/varun.jpeg"
-              alt="varun"
-              unoptimized
-            />
-          </BackgroundGradient>
+          {/* <BackgroundGradient containerClassName="mb-8"> */}
+          <Image
+            width="0"
+            height="0"
+            className="w-full h-full contrast-125 brightness-75 rounded-full"
+            src="/varun.jpeg"
+            alt="varun"
+            unoptimized
+          />
+          {/* </BackgroundGradient> */}
           <div className="relative text-xl md:text-5xl text-center font-bold">
             <span className="bg-clip-text text-transparent bg-gradient-to-l from-neutral-200 to-neutral-500">
               Hello, I&apos;m Varun Bardwaj
