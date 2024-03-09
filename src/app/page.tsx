@@ -22,7 +22,7 @@ export default function Home() {
           <Image
             width="0"
             height="0"
-            className="w-full h-full contrast-125 brightness-75 rounded-full"
+            className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 contrast-125 brightness-75 rounded-full "
             src="/varun.jpeg"
             alt="varun"
             unoptimized
