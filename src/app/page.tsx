@@ -150,7 +150,7 @@ export default function Home() {
                   subTitle: "VSIX",
                   description:
                     "An extension for Visual Studio Code adds snippets for React for JavaScript.",
-                  link: "https://marketplace.visualstudio.com/items?itemName=VarunBardwaj.Reactsnippets",
+                  link: "https://marketplace.visualstudio.com/items?itemName=VarunBardwaj.Reactjssnippets",
                 },
                 {
                   title: "Audio Player Template",
