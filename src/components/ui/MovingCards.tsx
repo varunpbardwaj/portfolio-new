@@ -6,7 +6,6 @@ import React, { ReactNode, useEffect, useState } from "react";
 export const MovingCards = ({
   items,
   direction = "left",
-  speed = "fast",
   pauseOnHover = true,
   className,
 }: {
@@ -16,7 +15,6 @@ export const MovingCards = ({
     className?: string;
   }[];
   direction?: "left" | "right";
-  speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
   className?: string;
 }) => {
@@ -24,7 +22,19 @@ export const MovingCards = ({
   const scrollerRef = React.useRef<HTMLUListElement>(null);
 
   useEffect(() => {
+    const checkScreenSize = () => {
+      if (window.innerWidth < 768) {
+        containerRef.current!.style.setProperty("--animation-duration", "40s");
+      } else {
+        containerRef.current!.style.setProperty("--animation-duration", "80s");
+      }
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+
     addAnimation();
+    return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
   const [start, setStart] = useState(false);
@@ -40,7 +50,6 @@ export const MovingCards = ({
       });
 
       getDirection();
-      getSpeed();
       setStart(true);
     }
   }
@@ -59,17 +68,7 @@ export const MovingCards = ({
       }
     }
   };
-  const getSpeed = () => {
-    if (containerRef.current) {
-      if (speed === "fast") {
-        containerRef.current.style.setProperty("--animation-duration", "50s");
-      } else if (speed === "normal") {
-        containerRef.current.style.setProperty("--animation-duration", "80s");
-      } else {
-        containerRef.current.style.setProperty("--animation-duration", "120s");
-      }
-    }
-  };
+
   return (
     <div
       ref={containerRef}
