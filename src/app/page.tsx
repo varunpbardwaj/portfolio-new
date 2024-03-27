@@ -104,7 +104,6 @@ export default function Home() {
           },
         ]}
         direction="right"
-        speed="normal"
         className="pt-10 pb-0 md:pt-10"
       />
       <div className="relative h-auto w-full bg-black bg-grid-white/[0.085]">
